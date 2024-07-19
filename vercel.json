@@ -1,21 +1,15 @@
 {
-    "version": 2,
-    "functions": {
-      "api/**.js": {
-        "runtime": "nodejs18.x"
-      }
-    },
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/pin",
-        "dest": "/index.js"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/pin",
+      "dest": "/index.js"
+    }
+  ]
+}
